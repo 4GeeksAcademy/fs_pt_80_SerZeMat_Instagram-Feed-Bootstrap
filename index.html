@@ -1,0 +1,161 @@
+<!--Nuestro segundo proyecto, Instagram Feed Bootstrap-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Feed Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <llink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        .nav-pill .nav-link{
+             color: grey;
+        }
+        .nav-pill .nav-link.active{
+              color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+           <div class="container-fluid">
+                <div class="d-flex justify-content-between w-100">
+                    <div>
+                        <span class="fa-brands fa-instagram fa-lg"></span>
+                        <h5 class="d-inline-block">Instagram</h5>
+                    </div>
+                    <div class="d-flex justify-content-end align-right">
+                        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModalToogle">
+                            Create a New Post
+                        </button>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown-menu-button-right"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fa-solid fa-gear"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-menu-button-right">
+                                <li> <p class="dropdown-item mb-0">Profile</p></li>
+                                <li> <p class="dropdown-item mb-0">Accesibility</p></li>
+                                <li> <p class="dropdown-item mb-0">Privacy and Data</p></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li> <p class="dropdown-item text-danger mb-0">Log out</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="exampleModalToogle" tabindex="-1" aria-labelledby="exampleModalToogle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToogleLabel">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Caption:</h6>
+                        <textarea class="form-control" placeholder="Add the caption of your post here"></textarea>
+                        <div class="row p-2">
+                            <button class="col-1 border rounded p-1 m-1">
+                                <span class="fa-solid fa-camera"></span>
+                            </button>
+                            <button class="col-1 border rounded p-1 m-1">
+                                <span class="fa-solid fa-location-dot"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <container>
+        <section class="container-fluid">
+            <ul class="nav nav-pill justify-content-center">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" aria-controls="home" aria-selected="true">
+                        <span class="fa-solid fa-table-cells"></span>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" aria-controls="profile" aria-selected="false">
+                        <span class="fa-solid fa-square"></span>
+                    </a>
+                </li>
+            </ul>
+        </section>      
+        <section class="tab-content" id="myTabContent">
+            <article class="tab-pane fade show active overflow-hidden" id="home" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg" ></div>
+                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
+                    <div class="col-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f" ></div>
+                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
+                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg" ></div>
+                    <div class="col-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
+                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
+                </div>
+            </article>
+        </section> 
+        <section class="tab-pane fade overflow-hidden" id="profile" aria-labelledby="profile-tab"></div>
+            <article class="row my-4">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-5">Meeting the new StarShip</div>
+                            <small class="align-bottom pt-2">04/23</small>
+                    </div>
+                        <img class="img-fluid w-100 col-12" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"/>
+                        <div class="p-2">
+                            <strong>102.345 Likes</strong>
+                            <p>This is the first render of the next generation of ships which will take humanity a step forward of the Solar System exploration.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>  
+            <article class="row my-4">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-5">The best pizza in New York: Robert´s</div>
+                            <small class="align-bottom pt-2">08/22</small>
+                    </div>
+                        <img class="img-fluid w-100 col-12" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"/>
+                        <div class="p-2">
+                            <strong>85.246 Likes</strong>
+                            <p>Since the turn of the century, Brooklyn’s classic spots such as Paulie Gee’s and Antonio’s Pizzeria have been joined by a new wave of visitors spanning from Lucali to Roberta’s and beyond.</p>
+                        </div>
+                    </div>
+                </div>
+            </article> 
+            <article class="row my-4">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-5">Suiran, a Luxury Collection Hotel, Kyoto</div>
+                            <small class="align-bottom pt-2">04/23</small>
+                    </div>
+                        <img class="img-fluid w-100 col-12" src="https://media.cntraveler.com/photos/61e11d6518fe5208acfca9a7/16:9/w_2240,c_limit/Suiran,-a-Luxury-Collection-Hotel,-Kyoto.jpg"/>
+                        <div class="p-2">
+                            <strong>97.364 Likes</strong>
+                            <p>Set in the Arashiyama district on the western side of Kyoto (an area frequented by Japanese nobles of years gone by), Suiran sits seamlessly on the jade waters of the Katsura river.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>   
+        </section>
+    </container>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+</body>
+</html>

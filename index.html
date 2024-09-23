@@ -17,7 +17,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
            <div class="container-fluid">
                 <div class="d-flex justify-content-between w-100">
                     <div>
@@ -47,7 +48,7 @@
                 </div>
             </div>
         </nav>
-
+      <!--Creación del Modal-->
         <div class="modal fade" id="exampleModalToogle" tabindex="-1" aria-labelledby="exampleModalToogle" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -75,41 +76,43 @@
             </div>
         </div>
     </header>
-
+    <!--Selección del Grid-->
     <container>
         <section class="container-fluid">
             <ul class="nav nav-pill justify-content-center">
-                <li class="nav-item" role="presentation">
+                <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" aria-controls="home" aria-selected="true">
                         <span class="fa-solid fa-table-cells"></span>
                     </a>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" aria-controls="profile" aria-selected="false">
                         <span class="fa-solid fa-square"></span>
                     </a>
                 </li>
             </ul>
-        </section>      
+        </section>   
+        <!--Grid 3x3 responsive-->   
         <section class="tab-content" id="myTabContent">
             <article class="tab-pane fade show active overflow-hidden" id="home" aria-labelledby="home-tab">
                 <div class="row">
-                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg" ></div>
-                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
-                    <div class="col-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg" ></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
                 </div>
                 <div class="row">
-                    <div class="col-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f" ></div>
-                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
-                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f" ></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
                 </div>
                 <div class="row">
-                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg" ></div>
-                    <div class="col-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
-                    <div class="col-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg" ></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
                 </div>
             </article>
         </section> 
+        <!--Grid 1x3-->
         <section class="tab-pane fade overflow-hidden" id="profile" aria-labelledby="profile-tab"></div>
             <article class="row my-4">
                 <div class="col-6 mx-auto border rounded p-0">

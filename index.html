@@ -17,37 +17,52 @@
 </head>
 <body>
     <header>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-           <div class="container-fluid">
+      <!--Navbar Toggler-->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
                 <div class="d-flex justify-content-between w-100">
-                    <div>
+                    <div> 
                         <span class="fa-brands fa-instagram fa-lg"></span>
-                        <h5 class="d-inline-block">Instagram</h5>
+                        <a class="navbar-brand" href="#">Instagram</a>
                     </div>
-                    <div class="d-flex justify-content-end align-right">
-                        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModalToogle">
-                            Create a New Post
-                        </button>
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown-menu-button-right"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="fa-solid fa-gear"></span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-menu-button-right">
-                                <li> <p class="dropdown-item mb-0">Profile</p></li>
-                                <li> <p class="dropdown-item mb-0">Accesibility</p></li>
-                                <li> <p class="dropdown-item mb-0">Privacy and Data</p></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li> <p class="dropdown-item text-danger mb-0">Log out</p></li>
-                            </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Options</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item pb-2">
+                                        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModalToogle">
+                                             Create a New Post
+                                        </button>
+                                    </li>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown-menu-button-right" data-bs-toggle="dropdown" aria-expanded="false">
+                                               <span class="fa-solid fa-gear"></span>
+                                            </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-button-right">
+                                                     <li> <p class="dropdown-item mb-0">Profile</p></li>
+                                                     <li> <p class="dropdown-item mb-0">Accesibility</p></li>
+                                                     <li> <p class="dropdown-item mb-0">Privacy and Data</p></li>
+                                                     <li>
+                                                          <hr class="dropdown-divider">
+                                                     </li>
+                                                     <li> 
+                                                           <p class="dropdown-item text-danger mb-0">Log out</p>
+                                                     </li>
+                                                 </ul>
+                                        </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+               </div>
         </nav>
+   
       <!--Creación del Modal-->
         <div class="modal fade" id="exampleModalToogle" tabindex="-1" aria-labelledby="exampleModalToogle" aria-hidden="true">
             <div class="modal-dialog">
@@ -99,13 +114,9 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg" ></div>
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
-                </div>
-                <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f" ></div>
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg"></div>
-                </div>
-                <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://media.cntraveller.com/photos/611beb596ab96bf3ecf1f192/16:9/w_2580%2Cc_limit/pizza-new-yorkgettyimages-659132005.jpg" ></div>
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100" src="https://apd-images.imgix.net/uploads/sites/2/2021/01/ramas_ia_1.jpg?auto=compress%2Cformat&crop=edges&fit=crop&ixlib=php-1.1.0&w=900&s=0655022506ec76e0f2e64d5735c1465f"></div>
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 p-1"><img class="img-fluid w-100 h-100" src="https://img2.rtve.es/i/?w=1600&i=1547223037288.jpg"></div>
